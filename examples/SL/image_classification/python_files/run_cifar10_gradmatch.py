@@ -5,13 +5,16 @@ learning training loop provided in CORDS and loads the predefined
 configuration for GradMatch.
 """
 
+from pathlib import Path
 from train_sl import TrainClassifier
 from cords.utils.config_utils import load_config_data
+
+BASE_DIR = Path(__file__).resolve().parents[4]
+config_file = BASE_DIR / "configs" / "SL" / "config_gradmatch_cifar10.py"
 
 
 def main():
     # Path to the predefined configuration for GradMatch on CIFAR-10
-    config_file = "configs/SL/config_gradmatch_cifar10.py"
     config_data = load_config_data(config_file)
 
     classifier = TrainClassifier(config_data)

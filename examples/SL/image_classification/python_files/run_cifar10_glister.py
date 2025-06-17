@@ -4,11 +4,15 @@ run it with default arguments using the configuration files provided in CORDS.
 """
 
 
+from pathlib import Path
 from train_sl import TrainClassifier
 from cords.utils.config_utils import load_config_data
 
-#CORDS comes with some predefined configuration files that mentiones the format of 
-config_file = "configs/SL/config_glister-warm_cifar10.py"
+# Resolve the configuration path relative to this file
+BASE_DIR = Path(__file__).resolve().parents[4]
+config_file = BASE_DIR / "configs" / "SL" / "config_glister-warm_cifar10.py"
+
+#CORDS comes with some predefined configuration files that mention the format
 #config_file = "configs/SL/config_glister_boston.py"
 #config_file = "configs/SL/config_full_boston.py"
 

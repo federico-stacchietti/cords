@@ -181,6 +181,8 @@ cfg = load_config_data(config_file)
 clf = TrainClassifier(cfg)
 clf.train()
 ```
+For a ready-to-run example using GradMatch on CIFAR-10, you can execute
+`examples/SL/image_classification/python_files/run_cifar10_gradmatch.py`.
 
 #### Using default semi-supervised training loop,
 ```python

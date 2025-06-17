@@ -39,6 +39,7 @@
 - [Starting with CORDS](#starting-with-cords)
   - [Pip Installation](#pip-installation)
   - [From Git Repository](#from-git-repository)
+  - [Using gradmatch_core](USAGE.md)
   - [First Steps](#first-steps)
     - [Using subset selection based data loaders](#using-subset-selection-based-data-loaders)
     - [Using default supervised training loop,](#using-default-supervised-training-loop)
@@ -115,6 +116,8 @@ git clone https://github.com/decile-team/cords.git
 cd cords
 pip install -r requirements/requirements.txt
 ```
+
+For instructions on importing ``gradmatch_core`` see [USAGE.md](USAGE.md).
 
 ### First Steps
 
